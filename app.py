@@ -1,6 +1,7 @@
 from flask import Flask, request, jsonify
 import requests
 import pprint
+import os
 
 app = Flask(__name__)
 
@@ -46,5 +47,8 @@ def index():
         print("Error:", str(e))
         return jsonify({"fulfillmentText": "Something went wrong. Please check your currencies or try again later."})
 
+
 if __name__ == "__main__":
-    app.run(debug=True)
+    # 🟡 Use the PORT provided by Render, or default to 10000 locally
+    port = int(os.environ.get("PORT", 10000))
+    app.run(host="0.0.0.0", port=port, debug=True)
