@@ -131,6 +131,12 @@ The bot converting the currency from one to another after a query.
 
 ---
 
+## 📺 Demo Video
+
+[![Watch the demo](https://img.youtube.com/vi/H7RFMYL9KSk/0.jpg)](https://youtu.be/H7RFMYL9KSk)
+
+---
+
 ## 📎 To-Do
 
 - Add support for multiple languages
